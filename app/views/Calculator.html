@@ -1,0 +1,40 @@
+<div class="header">
+  <ul class="nav nav-pills pull-right">
+    <li class="active"><a ng-href="/#/">Home</a></li>
+    <li><a ng-href="/#/Mini_Cart">MiniCart</a></li>
+    <li><a ng-href="/#/Calculator">Calculon</a></li>
+  </ul>
+  <h3 class="text-muted">AnguYeo</h3>
+</div>
+<form action="">
+	<h3>Calculator</h3>
+	<input type="text" ng-init="output=''" ng-model="output" class="form-control">
+	<table class="table table">
+		<tr >
+			<td><label ng-click="press(1)" class="btn btn-info">1</label></td>
+			<td><label ng-click="press(2)" class="btn btn-info">2</label></td>
+			<td><label ng-click="press(3)" class="btn btn-info">3</label></td>
+			<td><label ng-click="press('+')" class="btn btn-info">+</label></td>
+		</tr>
+		<tr>
+			<td><label ng-click="press(4)" class="btn btn-info">4</label></td>
+			<td><label ng-click="press(5)" class="btn btn-info">5</label></td>
+			<td><label ng-click="press(6)" class="btn btn-info">6</label></td>
+			<td><label ng-click="press('*')" class="btn btn-info">*</label></td>
+		</tr>
+		<tr>
+			<td><label ng-click="press(7)" class="btn btn-info">7</label></td>
+			<td><label ng-click="press(8)" class="btn btn-info">8</label></td>
+			<td><label ng-click="press(9)" class="btn btn-info">9</label></td>
+			<td><label ng-click="press('/')" class="btn btn-info">/</label></td>
+		</tr>
+		<tr>
+			<td><label ng-click="press(0)" class="btn btn-info">0</label></td>
+			<td><label ng-click="press('=')" class="btn btn-info">=</label></td>
+			<td><label ng-click="press('cc')" class="btn btn-info">CC</label></td>
+			<td><label ng-click="press('-')" class="btn btn-info">-</label></td>
+		</tr>
+	</table>
+
+
+</form>

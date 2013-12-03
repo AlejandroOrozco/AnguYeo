@@ -1,0 +1,24 @@
+<div class="header">
+  <ul class="nav nav-pills pull-right">
+    <li class="active"><a ng-href="/#/">Home</a></li>
+    <li><a ng-href="/#/Mini_Cart">MiniCart</a></li>
+    <li><a ng-href="/#/Calculator">Calculon</a></li>
+  </ul>
+  <h3 class="text-muted">AnguYeo</h3>
+</div>
+<form action="">
+	<div class="form-group">
+		<input type="text" class="form-control" placeholder="Buscar" ng-model="search" >
+	</div>
+	<table class="table table-bordered">
+		<thead>
+			<th>Nombre</th>
+			<th>Precio</th>
+		</thead>
+		<tr ng-repeat="alimento in alimentos | filter:search" > 
+				<td><label ng-click="toggle(alimento)" class="btn btn-{{ alimento.active? 'success' : 'warning'}}">{{alimento.name}}</label></td>
+				<td><label  class="btn btn-{{ alimento.active? 'success' : 'info'}}">{{alimento.price}}</label></td>
+		</tr>
+	</table>
+	<button class="btn btn-success">Total: {{total()|currency}}</button>
+</form>
